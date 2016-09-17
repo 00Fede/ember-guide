@@ -1,0 +1,15 @@
+<div class="jumbo show-listing">
+  <div class="right detail-section">
+    <div class="detail name">
+      <strong>Nombre:</strong> {{model.name}}
+    </div>
+    <div class="detail type">
+      <strong>Tipo:</strong> {{spies-type model.type}} - {{model.type}}
+    </div>
+    <div class="detail city">
+      <strong>Ciudad:</strong> {{model.city}}
+    </div>
+  </div>
+  <img src="{{model.image}}" class="spy-pic">
+</div>
+{{outlet}}

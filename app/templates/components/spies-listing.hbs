@@ -1,0 +1,17 @@
+<article class="listing">
+  <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
+    <img src="{{spy.image}}" alt="">
+    <small>Agrandar Imagen</small>
+  </a>
+  <h3>{{#link-to "spies.show" spy}}{{spy.name}}{{/link-to}}</h3>
+  <div class="detail type">
+    <span>Tipo:</span> {{spies-type spy.type}} - {{spy.type}}
+  </div>
+  <div class="detail city">
+    <span>Ciudad:</span> {{spy.city}}
+  </div>
+</article>
+
+
+
+{{yield}}

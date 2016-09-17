@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('contact');
+  this.route('about');
+  this.route('spies', function() {
+    this.route('show',{path: '/:spy_id' });
+  });
 });
 
 export default Router;
